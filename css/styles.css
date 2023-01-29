@@ -1,5 +1,22 @@
 h1 {
-    font-size: xx-large;
-    
+    font-size: 6rem;
+    font-family: 'Alegreya SC', serif;
+    text-align: center;
 }
 
+p{
+    font-size: 1rem;
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.btn-scrolltop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    height: 2rem;
+    width: 2rem;
+    background-color: crimson;
+    color: black;
+    border-radius: 25%;
+}
