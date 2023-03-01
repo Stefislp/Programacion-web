@@ -1,29 +1,299 @@
-h1 {
+html {
+    background-color: #F8F9F9;
+    background: -moz-linear-gradient(top, #F8F9F9 0%, #e6ecec 25%, #41747a 50%, #1a555c 75%, #03363D 100%);
+    background: -webkit-linear-gradient(top, #F8F9F9 0%, #e6ecec 25%, #41747a 50%, #1a555c 75%, #03363D 100%);
+    background: linear-gradient(bottom, #F8F9F9 0%, #e6ecec 25%, #41747a 50%, #1a555c 75%, #03363D 100%);
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #F8F9F9;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    color: #03363D;
+}
+
+nav a {
+    color: #03363D;
+    text-decoration: none;
+    border: 2px solid #e6ecec;
+    border-radius: 10px;
+    padding: 6px;
+    background-color: #e6ecec;
+    margin-right: 6px;
+    margin-left: 6px;
+}
+
+.titulo {
+    margin: 20px 20px 30px;
+    border: solid #03363D;
+    border-radius: 10px;
+    padding: 25px;
+    background-color: #03363D;
+}
+
+.titulo_imagen {
+    border-radius: 75px;
+    margin: 15px;
+    padding: 10px;
+    
+}
+
+.titulo_titulo {
     font-size: 6rem;
     font-family: 'Alegreya SC', serif;
     text-align: center;
+    margin: 15px;
+    color: #F8F9F9;
 }
 
 
-h2 {
+.titulo_subtitulo {
     font-size: 4rem;
     font-family: 'Alegreya SC', serif;
     text-align: right;
+    padding: 10px;
+    margin: 10px;
+    color: #F8F9F9;
 }
 
-p, li, label{
-    font-size: 1rem;
-    color: black;
-    font-family: 'Montserrat', sans-serif;
-}
-
-.btn-scrolltop {
+#btn_scrolltop {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    height: 2rem;
-    width: 2rem;
+    padding: 1.25rem;
+    background-color: #36a1a1;
+    color: #fff;
+    border-radius: 20%;
+    border: none;
+    font-size: 1rem;
+}
+
+.perfil {
+    margin: 20px 20px 30px;
+    border: solid #1a555c;
+    border-radius: 10px;
+    padding: 25px;
+    background-color: #1a555c;
+    color: #F8F9F9;
+}
+
+.datos_personales {
+    font-size: 3rem;
+    font-family: 'Alegreya SC', serif;
+    text-align: center;
+    padding: 10px;
+    margin: 20px 10px 25px;
+    text-decoration: underline;
+}
+
+.perfil_info {
+    margin: 40px 15px 35px;
+    padding: 10px;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.perfil_info_item {
+    margin: 20px;
+    padding: 8px;
+}
+
+.sobre-mi {
+    margin: 20px 20px 30px;
+    border: solid #5f989e;
+    border-radius: 10px;
+    padding: 25px;
+    background-color: #5f989e;
+    color: #183c41;
+}
+
+.sobre-mi_titulo {
+    font-size: 3rem;
+    font-family: 'Alegreya SC', serif;
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+    text-decoration: underline;
+}
+
+.sobre-mi_parrafo {
+    margin: 25px 25px 30px;
+    padding: 15px 10px 15px;
+    text-align: justify;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.educacion {
+    margin: 20px 20px 30px;
+    border: solid #7b9e9e;
+    border-radius: 10px;
+    padding: 25px;
+    background-color: #7b9e9e;
+    color: #183c41;
+}
+
+.educacion_titulo {
+    font-size: 3rem;
+    font-family: 'Alegreya SC', serif;
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+    text-decoration: underline;
+}
+
+.educacion_item {
+    margin: 10px 10px 10px 0px;
+    padding: 10px 10px 10px 0px;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.educacion_lista {
+    margin: 20px;
+    list-style-type: disc;
+    font-size: 20px;
+}
+
+h4 {
+    margin: 2px;
+    padding: 2px;
+}
+
+p{ 
+    margin: 2px;
+}
+
+
+.habilidades {
+    margin: 20px 20px 30px;
+    border: solid #cfe7e7;
+    border-radius: 10px;
+    padding: 25px;
+    background-color: #cfe7e7;
+    color: #03363D;
+}
+
+.habilidades_titulo {
+    font-size: 3rem;
+    font-family: 'Alegreya SC', serif;
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+    text-decoration: underline;
+}
+
+.habilidades_item {
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    margin: 10px 10px 10px 0px;
+    padding: 10px 10px 10px 0px;
+}
+
+.habilidades_lista {
+    margin: 20px;
+    list-style-type: disc;
+    font-size: 30px;
+}
+
+.experiencia {
+    margin: 20px 20px 30px;
+    border: solid #cfe7e7;
+    border-radius: 10px;
+    padding: 25px;
+    background-color: #cfe7e7;
+    color: #0e2a2e;
+}
+
+.experiencia_titulo {
+    font-size: 3rem;
+    font-family: 'Alegreya SC', serif;
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+    text-decoration: underline;
+}
+
+.experiencia_item {
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    margin: 10px 10px 10px 0px;
+    padding: 10px 10px 10px 0px;
+}
+
+.experiencia_lista {
+    margin: 20px;
+    list-style-type: disc;
+    font-size: 20px;
+}
+
+.experiencia_item li {
+    margin: 10px 10px 10px 0px;
+}
+
+.contacto {
+    margin: 20px 20px 30px;
+    border: solid #F8F9F9;
+    border-radius: 10px;
+    padding: 25px;
+    background-color: #F8F9F9;
+    color: #03363D;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contacto_titulo {
+    font-size: 3rem;
+    font-family: 'Alegreya SC', serif;
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+    text-decoration: underline;
+}
+
+.contacto_formulario {
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    gap: .5rem;
+}
+
+.contacto_input {
+    padding: 12px 20px;
+    width: 75%;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border-radius: 6px;
+    display: list-item;
+}
+
+.contacto_comentario {
+    padding: 12px 20px;
+    width: 75%;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border-radius: 6px;
+    display: list-item;
+}
+
+.boton{
+    color:white;
+    font-size: 1rem;
+    background-color: #16DB65;
+    padding: 1rem;
+    border: none;
+    width: 75%;
+    border-radius: 8px;
+}
+
+.boton:hover{
     background-color: crimson;
-    color: black;
-    border-radius: 25%;
 }
